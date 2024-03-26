@@ -2,22 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css" type="text/css">
     <title>Notas</title>
   </head>
   <body>
   <div id="page">
     <header>
-      <h1>Notas</h1>
+      <i data-fa-symbol="truck" class="fa-solid fa-truck fa-fw"></i>
+      <i class="far fa-heart"></i>
+        <h1>Notas</h1>
     </header>
-    <form>
-      <input type="text">
-    </form>
+    <div class="form-container"> 
+      <button data-modal="Create"> Criar</button>
   </div>
+    <main class="note-container">
+      <div class="note">
+        <strong>tarefa 1</strong>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, molestias. Incidunt, eos? Quod repellendus maiores rerum eaque assumenda quo, nemo ex natus, harum error aut laudantium in illum nobis modi!</p>
+      </div>
+      <div class="note">
+        <strong>tarefa 1</strong>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, molestias. Incidunt, eos? Quod repellendus maiores rerum eaque assumenda quo, nemo ex natus, harum error aut laudantium in illum nobis modi!</p>
+      </div>
+    </main>
+  </div>
+  <div class="modal-container" data-modal="container"> 
+    <div class="modal">
+    <button data-modal="Close">Fechar</button>
+    </div>
 
+  </div>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
