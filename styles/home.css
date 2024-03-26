@@ -43,6 +43,13 @@ border-radius: 6px;
   border-radius: 6px;
   margin-top: -3rem;
   padding: 2rem;
+
+  > button {
+    padding: 1rem 2rem;
+    background: var(--blue-900);
+    border-radius: 4px;
+    color: var(--gray-100)
+  }
  
 }
 /* .form{

@@ -1,5 +1,8 @@
-import Modal from "./modal";
+/* eslint-disable quotes */
+import Modal from "./modal"
 
-const Modal = new Modal('[data-modal="Create"]', '[data-modal="Close"]',
-'[data-modal="container"]')
- Modal.init()
+const modal = new Modal('[data-modal="open"]', '[data-modal="close"]',
+	'[data-modal="container"]')
+modal.init()  
+
+console.log('[data-modal="open"]')

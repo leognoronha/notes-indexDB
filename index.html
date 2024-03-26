@@ -13,12 +13,10 @@
   <body>
   <div id="page">
     <header>
-      <i data-fa-symbol="truck" class="fa-solid fa-truck fa-fw"></i>
-      <i class="far fa-heart"></i>
         <h1>Notas</h1>
     </header>
     <div class="form-container"> 
-      <button data-modal="Create"> Criar</button>
+      <button data-modal="open">Criar</button>
   </div>
     <main class="note-container">
       <div class="note">
@@ -31,11 +29,17 @@
       </div>
     </main>
   </div>
-  <div class="modal-container" data-modal="container"> 
+  <div class="modal-container" data-modal="container" id="container"> 
     <div class="modal">
-    <button data-modal="Close">Fechar</button>
-    </div>
+      <header> 
+        <button data-modal="close">X</button>
+      </header>
+      <form action="">
+        <input type="text" name="" id="">
 
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+    </div>
   </div>
     <script type="module" src="./src/main.js"></script>
   </body>

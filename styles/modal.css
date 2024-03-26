@@ -14,6 +14,31 @@
 
 .modal-container.active{
   display: flex;
-  
 }
 
+.modal {
+  background: var(--gray-100);
+  border-radius: 6px;
+  width: 80vw;
+  max-width: 600px;
+  padding: 40px;
+  position: relative;
+
+  > header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    > button {
+      font-weight: 700;
+    }
+  }
+
+  > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
