@@ -7,6 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./styles/styles.css" type="text/css">
     <title>Notas</title>
   </head>
@@ -14,11 +15,21 @@
   <div id="page">
     <header>
         <h1>Notas</h1>
+
+        <button data-modal="open" class="btnAdd">
+          <img class="svg" src="./src/assets/plus.svg" alt="">
+          Criar
+        </button>
     </header>
-    <div class="form-container"> 
-      <button data-modal="open">Criar</button>
-  </div>
+   
     <main class="note-container">
+      <a class="note" href="./note.html" target="_self" >
+        <div>
+          <strong>tarefa 1</strong>
+          <span>19/08/2024</span>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, molestias. Incidunt, eos? Quod repellendus maiores rerum eaque assumenda quo, nemo ex natus, harum error aut laudantium in illum nobis modi!</p>
+      </a>
       <div class="note">
         <strong>tarefa 1</strong>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, molestias. Incidunt, eos? Quod repellendus maiores rerum eaque assumenda quo, nemo ex natus, harum error aut laudantium in illum nobis modi!</p>
@@ -32,12 +43,28 @@
   <div class="modal-container" data-modal="container" id="container"> 
     <div class="modal">
       <header> 
-        <button data-modal="close">X</button>
+        <button data-modal="close">
+          <img class="svg" src="./src/assets/x.svg" alt="">
+        </button>
       </header>
-      <form action="">
-        <input type="text" name="" id="">
+      <form action="" class="form">
+         
+        <div class="input-container">
+          <label for="task">Tarefa:</label>
+          <input type="text" id="task" name="task" class="input">
+        </div>
 
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div class="input-container">
+          <label for="date">Data</label>
+          <input type="date" id="date" name="date" class="input">
+        </div>
+
+        <div class="input-container">
+          <label for="description">Descrição</label>
+          <textarea name="description" id="description" cols="30" rows="6" class="input"></textarea>
+        </div>
+
+        <button type="submit" id="createNoteBtn">Adicionar</button>
     </form>
     </div>
   </div>
